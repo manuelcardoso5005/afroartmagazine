@@ -1,0 +1,205 @@
+* {
+    margin:0;
+    padding: 0;
+    outline: none;
+    border: none;
+	font-size: 100%;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #ffffff;
+}
+
+header {
+    margin: auto;
+    padding: 40px 0;
+    width: 80%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header  a {
+    font-size: 2em;
+    text-transform: capitalize;
+    font-weight: 600;
+    color:#999;
+    transition: all 0.5s ease;
+}
+
+
+header  a:hover {
+    color:#707070;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    width: 39%;
+    height: auto;
+    margin: 0 0 15px 0;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+}
+.dados {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    width: 59%;
+}
+ h1 {
+    text-align: center;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    color: #373737;
+}
+
+ h3 {
+    text-align: center;
+    font-size: 1.2em;
+    color: #707070;
+    text-transform: capitalize;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1em;
+    color: #707070;
+    text-transform:lowercase;
+}
+
+ul  {
+    width: 70%;
+    margin: auto;
+}
+ul h2 {
+   text-align: center;
+   font-size: 1.5em;
+   color: #373737;
+   text-transform: capitalize;
+   margin: 10px 0;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 6px 0;
+    height: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 6px;
+}
+
+.left {
+    font-size: 2em;
+}
+
+.fa-html5 {
+    color: #F24822;
+}
+
+.fa-css3-alt {
+    color: #0554F2;
+}
+
+.fa-square-js {
+    color: #F2CB05;
+}
+
+.fa-bootstrap {
+    color: #7013F2;
+}
+
+.fa-star {
+    color: goldenrod;
+}
+.redessociais {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4% auto;
+    width: 70%;
+}
+.redessociais a{
+
+    margin: auto;
+    color: #373737;
+    font-size: 2em;
+    transition: all 0.5s ease;
+}
+.redessociais a:hover{
+    transform: scale(1.05);
+}
+.fa-github:hover {
+    color: #000;
+}
+
+.fa-linkedin:hover {
+    color: #0468BF;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+.py {
+    display: none !important;
+}
+
+@media screen and (max-width:800px) {
+    .content{
+        display: block;
+    }
+    main {
+        width: 100%;
+        
+    }
+    .image{
+        width: 60%;
+        margin: auto;
+    }
+    .dados{
+        
+        margin: auto;
+    }
+    .py {
+        display: block !important;
+        width: 100%;
+        height: 30px;
+    }
+}
